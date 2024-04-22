@@ -1,5 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
+import src.dir_01_performance.performance as performance
 
 app = FastAPI()
 

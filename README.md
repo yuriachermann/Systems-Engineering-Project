@@ -10,7 +10,7 @@
 <h3 align="center">Flight Dynamics Project</h3>
 
   <p align="center">
-    Design Considerations for Stability and Efficiency in Unmanned Aerial Vehicle
+    Design Considerations for Stability and Efficiency in Glider Unmanned Aerial Vehicle
     <br />
     <a href="https://github.com/yuriachermann/Flight-Dynamics-Project"><strong>Explore the docs »</strong></a>
     <br />
@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* Python >= 3.6
+* Python >= 3.12
 * [OpenVSP](https://openvsp.org/download.php)
 
 ### Installation
@@ -82,8 +82,10 @@ To get a local copy up and running follow these simple example steps.
 
 # OpenVSP
 
-![Test Image 1](data/images/view-wire-iso.png)
-![Test Image 1](data/images/view-texture-rear.png)
+![Test Image 1](data/images/img.png)
+![Test Image 1](data/images/img_1.png)
+![Test Image 1](data/images/img_2.png)
+![Test Image 1](data/images/img_3.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,8 +107,6 @@ Yuri Winche Achermann - [@YuriAchermann](https://twitter.com/YuriAchermann) - yu
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-* [Pieter van Tilburg Bernardes](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiOoqrz_uuDAxUmhv0HHSN5Cu0QFnoECBYQAQ&url=https%3A%2F%2Fbr.linkedin.com%2Fin%2Fpieter-van-tilburg-bernardes&usg=AOvVaw2YIYb2TFsG02URKK5ZUu7C&opi=89978449)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

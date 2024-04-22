@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from performance import pot_req
+from src.dir_01_performance.performance import pot_req
 
 
 X = np.linspace(1, 81, 80)
