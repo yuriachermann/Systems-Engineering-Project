@@ -1,19 +1,6 @@
 import numpy as np
 
 
-def rho_si(height):
-    h = height * 3.2808
-    return (((1 - 6.875E-6 * h) ** 5.2561) / (1 - 6.875E-6 * h)) * 1.225
-
-
-def pot_req(vel, h):
-    cl = 2 * W / (rho_si(h) * S * pow(vel, 2))
-    cdi = pow(cl, 2) * K
-    cd = Cdo + cdi
-    d = cd * rho_si(h) * pow(vel, 2) * S / 2
-    return d * vel * 0.00134
-
-
 if __name__ == '__main__':
     m = .4  # Mass [Kg]
     H = 2  # Altitude [m]

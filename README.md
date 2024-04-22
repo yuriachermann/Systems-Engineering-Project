@@ -7,7 +7,7 @@
     <img src="https://i.imgur.com/OdWaEfh.png" alt="Logo" width="320" height="180">
   </a>
 
-<h3 align="center">Flight Dynamics Project</h3>
+<h3 align="center">AeroGlider - Systems Engineering</h3>
 
   <p align="center">
     Design Considerations for Stability and Efficiency in Glider Unmanned Aerial Vehicle
@@ -27,93 +27,66 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#steps">Steps</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#srr">SRR</a></li>
+        <li><a href="#pdr">PDR</a></li>
+        <li><a href="#cdr">CDR</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+# About The Project
 
 Design Considerations for Stability and Efficiency in Unmanned Aerial Vehicle
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SRR -->
 
-### Built With
-
-* [![Python][Python]][Python-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-* Python >= 3.12
-* [OpenVSP](https://openvsp.org/download.php)
-
-### Installation
+## [SRR](docs/SRR/README.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- PDR -->
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-# OpenVSP
-
-![Test Image 1](data/images/img.png)
-![Test Image 1](data/images/img_1.png)
-![Test Image 1](data/images/img_2.png)
-![Test Image 1](data/images/img_3.png)
+## [PDR](docs/PDR/README.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CDR -->
 
-<!-- ROADMAP -->
-## Roadmap
+## [CDR](docs/CDR/README.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
+
 ## Contact
 
-Yuri Winche Achermann - [@YuriAchermann](https://twitter.com/YuriAchermann) - yuri.achermann@gmail.com
+- Yuri Winche Achermann - [@YuriAchermann](https://twitter.com/YuriAchermann) - yuri.achermann@gmail.com
 
+- Pedro Viegas - []() -
+
+- Guilherme Hoepers - []() -
+
+- Samuel Fabrizio Scarpari - []() -
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
+- Gian Ricardo Berkenbrock
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
-[Python]: https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python
-[Python-url]: https://www.python.org
