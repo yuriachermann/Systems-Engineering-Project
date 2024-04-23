@@ -7,19 +7,19 @@
     <img src="https://i.imgur.com/OdWaEfh.png" alt="Logo" width="320" height="180">
   </a>
 
-<h3 align="center">AeroGlider - Systems Engineering</h3>
+<h3 align="center">AeroGlider</h3>
 
   <p align="center">
-    Design Considerations for Stability and Efficiency in Glider Unmanned Aerial Vehicle
+    Description of the AeroGlider project, a systems engineering project developed at UFSC.
     <br />
-    <a href="https://github.com/yuriachermann/Flight-Dynamics-Project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/yuriachermann/Systems-Engineering-Project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://website.com">View Demo</a>
     ·
-    <a href="https://github.com/yuriachermann/Flight-Dynamics-Project/issues">Report Bug</a>
+    <a href="https://github.com/yuriachermann/Systems-Engineering-Project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yuriachermann/Flight-Dynamics-Project/issues">Request Feature</a>
+    <a href="https://github.com/yuriachermann/Systems-Engineering-Project/issues">Request Feature</a>
   </p>
 </div>
 
@@ -45,25 +45,40 @@
 
 # About The Project
 
-Design Considerations for Stability and Efficiency in Unmanned Aerial Vehicle
+The AeroGlider project aims to design an efficient and stable prototype glider.</br>
+This README outlines the key considerations, design steps, and documentation for achieving our mission.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SRR -->
 
-## [SRR](docs/SRR/README.md)
+## [System Requirements Review (SRR)](docs/SRR/README.md)
+
+In this phase, we define high-level requirements and lay the groundwork for subsequent design and development steps.
+
+- [Stakeholders](docs/SRR/AeroGlider-Stakeholders.pdf): Briefly describe the AeroGlider project, emphasizing its transport mission capability.
+- [Definitions](docs/SRR/AeroGlider-Definitions.pdf): Specify system capabilities, such as payload adjustment, flight distance, and lateral deviation.
+- [ConOps](docs/SRR/AeroGlider-ConOps.pdf): Identify potential risks and propose mitigation strategies.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- PDR -->
 
-## [PDR](docs/PDR/README.md)
+## [Preliminary Design Review (PDR)](docs/PDR/README.md)
+
+In this phase, we dive into detailed design aspects.
+
+(TBD)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CDR -->
 
-## [CDR](docs/CDR/README.md)
+## [Critical Design Review (CDR)](docs/CDR/README.md)
+
+In this phase, we focus on the finalized design and integration.
+
+(TBD)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,13 +87,17 @@ Design Considerations for Stability and Efficiency in Unmanned Aerial Vehicle
 
 ## Contact
 
-- Yuri Winche Achermann - [@YuriAchermann](https://twitter.com/YuriAchermann) - yuri.achermann@gmail.com
+- [Yuri Achermann](https://www.linkedin.com/in/yuriachermann/)
+  - [yuri.achermann@gmail.com](mailto:yuri.achermann@gmail.com)
 
-- Pedro Viegas - []() -
+- Pedro Viegas
+  - @.com
 
-- Guilherme Hoepers - []() -
+- Guilherme Hoepers
+  - @.com
 
-- Samuel Fabrizio Scarpari - []() -
+- Samuel Fabrizio Scarpari
+  - @.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,6 +106,6 @@ Design Considerations for Stability and Efficiency in Unmanned Aerial Vehicle
 
 ## Acknowledgments
 
-- Gian Ricardo Berkenbrock
+- Professor Gian Ricardo Berkenbrock
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
