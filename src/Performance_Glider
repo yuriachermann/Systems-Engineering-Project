@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  4 17:59:42 2024
+
+@author: G Hoepers
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# Parâmetros do planador e condições iniciais
+m = 0.400              # [kg]     - massa do planador
+g = 9.81               # [m/s2]   - aceleração gravitacional
+rho = 1.225            # [kg/m3]  - densidade do ar
+A = 0.20               # [m2]     - área da asa do planador
+C_L = 0.5              # [-]      - coeficiente de sustentação
+C_D = 0.05             # [-]      - coeficiente de arrasto
+
+# Condições iniciais
+Y0 = 1.5               # [m]      - altura inicial
+V0 = 8.                # [m/s]    - velocidade inicial
+theta = 0.0            # [deg]    - ângulo de lançamento
+X_target = 11.0        # [m]      - distância alvo
+
+# Convertendo ângulo para radianos
+theta_rad = np.radians(theta)
+
+# Componentes iniciais da velocidade
+Vx0 = V0 * np.cos(theta_rad)
+Vy0 = V0 * np.sin(theta_rad)
+
+# Função que retorna as derivadas do sistema (equações de movimento)
+def equations(t, state):
+    x, y, Vx, Vy = state
+    
+    V = np.sqrt(Vx**2 + Vy**2)      # [m/s] - Módulo vetor velocidade
+    L = 0.5 * rho * V**2 * A * C_L  # [N]   - Força de sustentação
+    D = 0.5 * rho * V**2 * A * C_D  # [N]   - Força de arrasto
+
+    # Componentes das forças
+    Fx = -D * Vx / V                # [N]
+    Fy = L - D * Vy / V - m * g     # [N]
+    
+    # Derivadas
+    dxdt = Vx
+    dydt = Vy
+    dVxdt = Fx / m
+    dVydt = Fy / m
+    
+    return [dxdt, dydt, dVxdt, dVydt]
+
+# Condições iniciais do estado [x, y, Vx, Vy]
+initial_state = [0, Y0, Vx0, Vy0]
+
+# Tempo de simulação [s]
+t_span = (0, 100)
+t_eval = np.linspace(0, 100, 1000)
+
+# Resolver as equações diferenciais
+sol = solve_ivp(equations, t_span, initial_state, t_eval=t_eval, rtol=1e-8, atol=1e-8)
+
+# Extrair soluções
+x = sol.y[0]
+y = sol.y[1]
+
+# Encontrar o ponto de impacto (quando y cruza zero)
+impact_index = np.where(y <= 0)[0]
+if impact_index.size > 0:
+    impact_index = impact_index[0]
+    x_impact = x[impact_index]
+    y_impact = y[impact_index]
+    print(f"O planador atingiu o solo em x = {x_impact:.2f} metros.")
+else:
+    print("O planador não atingiu o solo dentro do tempo de simulação.")
+
+# Plotar a trajetória do planador
+plt.plot(x, y)
+plt.axhline(0, color='red', linestyle='--')
+plt.xlabel('Distância horizontal (m)')
+plt.ylabel('Altura (m)')
+plt.title('Trajetória do planador')
+plt.grid(True)
+plt.show()
