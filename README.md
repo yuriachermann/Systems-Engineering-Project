@@ -91,13 +91,13 @@ In this phase, we focus on the finalized design and integration.
   - [yuri.achermann@gmail.com](mailto:yuri.achermann@gmail.com)
 
 - Pedro Viegas
-  - @.com
+  - [pedronewey@gmail.com](mailto:pedronewey@gmail.com)
 
 - Guilherme Hoepers
-  - @.com
+  - [guihoepers02@gmail.com](mailto:guihoepers02@gmail.com)
 
 - Samuel Fabrizio Scarpari
-  - @.com
+  - [samufabrizio@gmail.com](mailto:samufabrizio@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
